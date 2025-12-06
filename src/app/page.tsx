@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div >
-      Home Page
+      <h1>Dennis Adu</h1>
     </div>
   );
 }

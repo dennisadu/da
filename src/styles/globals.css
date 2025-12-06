@@ -1,19 +1,29 @@
-@import "tailwindcss";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @layer base {
   :root {
-    --background: #FAFAFA;
+    --background: #fafafa;
     --foreground: #252525;
+
+    --color-primary-60: #EB9E9E;
+    --color-primary-100: #C92A2A;
   }
 
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-family: var(--font-antonio);
+    font-size: 4rem;
+    font-weight: 600;
+  }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+@layer utilities {
+  .app-container {
+    @apply lg:max-w-[1440px] mx-auto w-full p-4 md:px-[72px] md:pt-10;
+  }
 }
