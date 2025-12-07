@@ -32,7 +32,7 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
       >
         <PopoverPanel
           focus
-          className='absolute z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden'
+          className='absolute z-50 top-0 inset-x-0 transition transform origin-top-right lg:hidden'
         >
           <div
             className={clsxm(
