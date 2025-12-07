@@ -1,17 +1,16 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-gray-10: #fafafa;
+  --color-gray-100: #252525;
+  --color-primary-60: #eb9e9e;
+  --color-primary-100: #c92a2a;
+}
+
 @layer base {
-  :root {
-    --background: #fafafa;
-    --foreground: #252525;
-
-    --color-primary-60: #EB9E9E;
-    --color-primary-100: #C92A2A;
-  }
-
   body {
-    background: var(--background);
-    color: var(--foreground);
+    background: var(--color-gray-10);
+    color: var(--color-gray-100);
     font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, sans-serif;
   }
 
