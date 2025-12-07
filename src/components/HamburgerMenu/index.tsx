@@ -46,14 +46,14 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
                   dennis adu
                 </Link>
               </div>
-              <div className='mr-2'>
+              <div className='-mr-2'>
                 <PopoverButton className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-100'>
                   <span className='sr-only'>Close menu</span>
                   <Bars3Icon className='w-11 h-11 text-primary-100 hover:text-gray-100' />
                 </PopoverButton>
               </div>
             </div>
-            <div className='px-2 pt-2 pb-3 mt-6 flex flex-col gap-8 items-center uppercase font-semibold text-[18px]'>
+            <div className='px-2 pt-2 pb-3 mt-16 mb-[86px] flex flex-col gap-8 items-center uppercase font-semibold text-[18px]'>
               {navigationItems.map(({ title, href }) => (
                 <Link
                   key={title}
