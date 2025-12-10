@@ -5,7 +5,7 @@ import Header from '../Header';
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className='app-container'>
+    <div className='px-fluid-4/[72px] pt-fluid-4/10'>
       <Header />
       {children}
     </div>
