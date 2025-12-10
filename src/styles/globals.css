@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --fluid-screen-min: 375px;
-  --fluid-screen-max: 1440px;
+  --screen-min: 375px;
+  --screen-max: 1440px;
 
   --color-gray-10: #fafafa;
   --color-gray-60: #838383;
@@ -23,6 +23,11 @@
     font-size: 4rem;
     font-weight: 600;
   }
+
+  .app-container {
+    max-width: var(--screen-max);
+    @apply mx-auto;
+  }
 }
 
 @utility fluid-core {
@@ -30,8 +35,8 @@
     var(--fluid-min),
     calc(
       var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
-        (100vw - var(--fluid-screen-min)) /
-        (var(--fluid-screen-max) - var(--fluid-screen-min))
+        (100vw - var(--screen-min)) /
+        (var(--screen-max) - var(--screen-min))
     ),
     var(--fluid-max)
   );
