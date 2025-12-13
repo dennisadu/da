@@ -3,7 +3,6 @@
 import { Popover } from '@headlessui/react';
 import { HamburgerMenu } from '../HamburgerMenu';
 import { Nav } from '../Nav';
-import Loading from '@/app/loading';
 
 const Header = () => {
   return (

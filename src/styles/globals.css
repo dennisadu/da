@@ -35,8 +35,7 @@
     var(--fluid-min),
     calc(
       var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
-        (100vw - var(--screen-min)) /
-        (var(--screen-max) - var(--screen-min))
+        (100dvw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
     ),
     var(--fluid-max)
   );
