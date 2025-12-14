@@ -41,7 +41,7 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
             )}
           >
             <div className='px-5 pt-4 flex items-center justify-between'>
-              <div className='text-[#454545] font-(family-name:--font-antonio) capitalize w-full text-[40px]'>
+              <div className='text-gray-80 font-antonio capitalize w-full text-[2.5rem]'>
                 <Link href='/' className='focus:outline-none uppercase'>
                   dennis adu
                 </Link>

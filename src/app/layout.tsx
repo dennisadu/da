@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Antonio } from 'next/font/google';
-import './global.css';
+import '@/styles/globals.css';
 import { clsxm } from '@/utils/clsxm';
 import Layout from '@/components/Layout/Layout';
 

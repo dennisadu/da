@@ -1,17 +1,17 @@
-@import 'tailwindcss';
-
-@theme {
-  --screen-min: 375px;
-  --screen-max: 1440px;
-
-  --color-gray-10: #fafafa;
-  --color-gray-60: #838383;
-  --color-gray-100: #252525;
-  --color-primary-60: #eb9e9e;
-  --color-primary-100: #c92a2a;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
+  :root {
+    --color-gray-10: #fafafa;
+    --color-gray-60: #838383;
+    --color-gray-80: #454545;
+    --color-gray-100: #252525;
+    --color-primary-60: #eb9e9e;
+    --color-primary-100: #c92a2a;
+  }
+
   body {
     background: var(--color-gray-10);
     color: var(--color-gray-100);
@@ -25,167 +25,6 @@
   }
 
   .app-container {
-    max-width: var(--screen-max);
-    @apply mx-auto;
+    @apply lg:max-w-[1440px] mx-auto w-full;
   }
-}
-
-@utility fluid-core {
-  --fluid-size: clamp(
-    var(--fluid-min),
-    calc(
-      var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
-        (100vw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
-    ),
-    var(--fluid-max)
-  );
-}
-
-@utility w-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  width: var(--fluid-size);
-}
-
-@utility h-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  height: var(--fluid-size);
-}
-
-@utility p-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  padding: var(--fluid-size);
-}
-
-@utility m-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  margin: var(--fluid-size);
-}
-
-@utility -m-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  margin: calc(var(--fluid-size) * -1);
-}
-
-@utility -mt-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  margin-top: calc(var(--fluid-size) * -1);
-}
-
-@utility text-fluid-* {
-  --fluid-min: --value(--value(integer));
-  --fluid-max: --modifier(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  font-size: clamp(
-    var(--fluid-min),
-    calc(
-      var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
-        (100vw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
-    ),
-    var(--fluid-max)
-  );
-}
-
-@utility px-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  padding-inline: var(--fluid-size);
-}
-
-@utility py-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  padding-block: var(--fluid-size);
-}
-
-@utility pt-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  padding-top: var(--fluid-size);
-}
-
-@utility pb-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  padding-bottom: var(--fluid-size);
-}
-
-@utility mx-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  margin-inline: var(--fluid-size);
-}
-
-@utility my-fluid-* {
-  --fluid-min: --spacing(--value(integer));
-  --fluid-max: --spacing(--modifier(integer));
-
-  --fluid-min: --value([length]);
-  --fluid-max: --modifier([length]);
-
-  @apply fluid-core;
-  margin-block: var(--fluid-size);
 }

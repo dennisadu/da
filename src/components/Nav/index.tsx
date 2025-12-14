@@ -15,7 +15,8 @@ export const Nav = () => {
           href={href}
           className={clsxm(
             href === pathname && 'text-primary-100',
-            'text-fluid-[18px]/[26px] font-bold uppercase',
+            '~text-[1.125rem]/[1.625rem] font-bold uppercase',
+            'hover:scale-110 transition-transform duration-200',
           )}
         >
           {title}
