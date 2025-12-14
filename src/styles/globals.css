@@ -35,7 +35,7 @@
     var(--fluid-min),
     calc(
       var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
-        (100dvw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
+        (100vw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
     ),
     var(--fluid-max)
   );
@@ -114,8 +114,14 @@
   --fluid-min: --value([length]);
   --fluid-max: --modifier([length]);
 
-  @apply fluid-core;
-  font-size: var(--fluid-size);
+  font-size: clamp(
+    var(--fluid-min),
+    calc(
+      var(--fluid-min) + (var(--fluid-max) - var(--fluid-min)) *
+        (100vw - var(--screen-min)) / (var(--screen-max) - var(--screen-min))
+    ),
+    var(--fluid-max)
+  );
 }
 
 @utility px-fluid-* {
