@@ -19,7 +19,6 @@ export const Hero = () => {
           priority
         />
       </div>
-      <div className='h-px mt-14 bg-gray-60 w-full' />
     </div>
   );
 };

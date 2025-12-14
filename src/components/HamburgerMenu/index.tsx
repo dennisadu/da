@@ -62,7 +62,7 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
                     {
                       'text-primary-100': href === pathname,
                     },
-                    'w-full text-[18px] text-center mt-3 block px-3 py-1 rounded-md font-bold hover:text-primary-100 hover:bg-gray-50',
+                    'w-full text-[18px] text-center mt-3 block px-3 py-1 rounded-md font-bold hover:scale-110 transition-transform duration-200',
                   )}
                 >
                   {title}
