@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import heroImg from '@/../public/images/hero_img.jpg';
 
 export const Hero = () => {
   return (
@@ -13,10 +14,11 @@ export const Hero = () => {
         <Image
           className='rounded-[clamp(20px,5vw,80px)] ~w-[16.938rem]/[48rem]  h-auto'
           alt='Dennis Adu'
-          src='/images/hero_img.jpg'
+          src={heroImg}
           width={768}
           height={515}
           priority
+          placeholder='blur'
         />
       </div>
     </div>
