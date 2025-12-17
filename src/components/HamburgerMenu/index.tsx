@@ -62,7 +62,15 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
                     {
                       'text-primary-100': href === pathname,
                     },
-                    'w-full text-[18px] text-center mt-3 block px-3 py-1 rounded-md font-bold hover:scale-110 transition-transform duration-200',
+                    'text-[18px] text-center mt-3 block py-1 rounded-md font-bold',
+                    'relative pb-1',
+                    'transition-colors duration-300 ease-in-out',
+                    href !== pathname && [
+                      'after:content-[""] after:absolute after:bottom-0 after:left-0',
+                      'after:w-0 after:h-[2px] after:bg-primary-100',
+                      'after:transition-all after:duration-300 after:ease-in-out',
+                      'hover:after:w-full hover:text-primary-100',
+                    ],
                   )}
                 >
                   {title}
