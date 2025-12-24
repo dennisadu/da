@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Antonio } from 'next/font/google';
 import '@/styles/globals.css';
 import { clsxm } from '@/utils/clsxm';
-import Layout from '@/components/Layout/Layout';
+import { Layout } from '@/components/Layout';
 
 const antonio = Antonio({
   variable: '--font-antonio',

@@ -13,3 +13,11 @@ export interface Item {
   id: number | string;
   title: string;
 }
+
+export interface MusicItem extends Item {
+  img: string;
+}
+
+export interface MusicList extends Item {
+  items: MusicItem[];
+}

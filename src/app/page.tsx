@@ -1,5 +1,6 @@
 import { Biography } from '@/components/Biography';
 import { Hero } from '@/components/Hero';
+import { Music } from '@/components/Music';
 import { SocialMedia } from '@/components/SocialMedia';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <div className='h-32' />
       <SocialMedia />
       <div className='h-32' />
+      <Music />
     </div>
   );
 }
