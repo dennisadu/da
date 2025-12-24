@@ -16,6 +16,7 @@
     background: var(--color-gray-10);
     color: var(--color-gray-100);
     font-family: 'Helvetica Neue', 'HelveticaNeue', Helvetica, sans-serif;
+    min-width: 300px;
   }
 
   h1 {
