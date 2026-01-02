@@ -4,10 +4,7 @@ import heroImg from '@/../public/images/hero_img.jpg';
 export const Hero = () => {
   return (
     <div>
-      <h1
-        data-debug='hero'
-        className='uppercase ~text-[4.06rem]/[12.5rem] text-primary-100 relative z-10 text-nowrap'
-      >
+      <h1 className='uppercase ~text-[4.06rem]/[12.5rem] text-primary-100 relative z-10 text-nowrap'>
         Dennis Adu
       </h1>
       <div className='flex justify-center ~-mt-6/14'>

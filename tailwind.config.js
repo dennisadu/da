@@ -20,6 +20,7 @@ export default {
       colors: {
         gray: {
           10: 'var(--color-gray-10)',
+          40: 'var(--color-gray-40)',
           60: 'var(--color-gray-60)',
           80: 'var(--color-gray-80)',
           100: 'var(--color-gray-100)',
