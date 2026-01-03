@@ -11,7 +11,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const MusicItemCard = ({
-  item: { id, title, img },
+  item: { title, img },
   orientation = 'vertical',
 }: {
   item: MusicItem;
@@ -39,6 +39,7 @@ const MusicItemCard = ({
       </div>
       <h5
         className={clsxm(
+          'font-helvetica',
           '~text-[1rem]/[1.5rem] text-gray-80 text-wrap font-normal',
           'group-hover:text-primary-100',
           isVertical && ['~w-[3.5rem]/[15.5rem] mt-[1rem]'],
@@ -63,7 +64,7 @@ export const Music = () => {
             >
               <div className={clsxm('flex flex-col w-fit')}>
                 <div className='flex justify-between'>
-                  <h4 className='~text-[1.125rem]/[1.75rem] uppercase'>
+                  <h4 className='font-helvetica font-normal ~text-[1.125rem]/[1.75rem] uppercase'>
                     {title}
                   </h4>
                   <Link
@@ -96,7 +97,7 @@ export const Music = () => {
           {MUSIC_LIST.map(({ id, title, items }) => (
             <Disclosure key={id} as='div'>
               <DisclosureButton className='group flex w-full items-center justify-between'>
-                <h4 className='~text-[1.125rem]/[1.75rem] uppercase'>
+                <h4 className='font-helvetica font-normal ~text-[1.125rem]/[1.75rem] uppercase'>
                   {title}
                 </h4>
                 <ChevronDownIcon className='size-11 fill-primary-100 group-data-[closed]:fill-primary-100 group-data-[open]:fill-gray-60 group-data-[open]:rotate-180 transition-all duration-200' />
@@ -111,7 +112,7 @@ export const Music = () => {
                     />
                   ))}
                 </div>
-                <div className='h-5'/>
+                <div className='h-5' />
                 <Link
                   href='/music'
                   className={clsxm(

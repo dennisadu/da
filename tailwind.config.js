@@ -32,6 +32,12 @@ export default {
       },
       fontFamily: {
         antonio: ['var(--font-antonio)'],
+        helvetica: [
+          'Helvetica Neue',
+          'HelveticaNeue',
+          'Helvetica',
+          'sans-serif',
+        ],
       },
     },
   },
