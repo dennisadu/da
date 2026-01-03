@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className='relative w-full ~h-[20.125rem]/[48.313rem]'>
+    <footer className='relative w-full ~h-[20.125rem]/[48.313rem] mt-auto'>
       <Image
         src={footerBgMobile}
         alt='Dennis Adu'

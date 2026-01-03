@@ -2,7 +2,12 @@
 
 import { Fragment } from 'react';
 import { clsxm } from '@/utils/clsxm';
-import { PopoverButton, PopoverPanel, Transition } from '@headlessui/react';
+import {
+  PopoverButton,
+  PopoverPanel,
+  Transition,
+  useClose,
+} from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { navigationItems } from '@/constants';
@@ -10,6 +15,7 @@ import { usePathname } from 'next/navigation';
 
 export const HamburgerMenu = ({ className }: { className?: string }) => {
   const pathname = usePathname();
+  const close = useClose();
   return (
     <div className='flex items-center sm:hidden'>
       <PopoverButton className='rounded-lg p-1 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-inset focus:ring-primary-100'>
@@ -58,6 +64,7 @@ export const HamburgerMenu = ({ className }: { className?: string }) => {
                 <Link
                   key={title}
                   href={href}
+                  onClick={() => close()}
                   className={clsxm(
                     {
                       'text-primary-100': href === pathname,

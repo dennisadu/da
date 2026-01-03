@@ -4,7 +4,7 @@ import { Footer } from '../Footer';
 
 export const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className='app-container'>
+    <div className='app-container min-h-screen flex flex-col'>
       <div className='~px-[1rem]/[4.5rem] ~pt-4/10'>
         <Header />
         {children}
