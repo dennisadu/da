@@ -16,6 +16,7 @@ export interface Item {
 
 export interface MusicItem extends Item {
   img: string;
+  href: string;
 }
 
 export interface MusicList extends Item {

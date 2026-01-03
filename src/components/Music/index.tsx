@@ -11,7 +11,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const MusicItemCard = ({
-  item: { title, img },
+  item: { title, img, href },
   orientation = 'vertical',
 }: {
   item: MusicItem;
@@ -25,7 +25,9 @@ const MusicItemCard = ({
         'group flex flex-col items-center',
         isHorizontal && ['flex-row', 'gap-4'],
       )}
-      href='/music'
+      href={href}
+      target='_blank'
+      rel='noopener noreferrer'
     >
       <div className='rounded-2xl overflow-hidden ~w-[3.5rem]/[15.5rem] ~h-[3.5rem]/[15.5rem]'>
         <Image
