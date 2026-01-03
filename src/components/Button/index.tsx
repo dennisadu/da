@@ -33,7 +33,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const baseStyles = clsxm(
-    '~w-[8rem]/[15rem] ~h-[2.75rem]/[2.875rem] hover:h-[53px] rounded-2xl',
+    '~w-[8rem]/[15rem] ~h-[2.75rem]/[2.875rem] hover:h-[53px] ~rounded-lg/2xl',
     'font-helvetica font-bold uppercase',
     '~text-[1.125rem]/[1.5rem] hover:~text-[1.5rem]/[2rem]',
     'transition-all duration-300 ease-in-out',
