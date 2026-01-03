@@ -1,21 +1,13 @@
+import { SOCIAL_MEDIA } from '@/constants';
 import { clsxm } from '@/utils/clsxm';
 import Link from 'next/link';
-
-const socialMediaLinks = [
-  {
-    name: 'instagram',
-    href: 'https://www.instagram.com/dennisadumusic',
-  },
-  { name: 'youtube', href: 'http://www.youtube.com/@adudennis' },
-  { name: 'facebook', href: 'https://www.facebook.com/adu.dennis' },
-];
 
 export const SocialMedia = () => {
   return (
     <div>
       <h1 className='~text-[2.5rem]/[4rem] uppercase'>Social Media</h1>
       <ul className='~mt-8/14 [&>*:not(:first-child)]:~mt-4/6'>
-        {socialMediaLinks.map(({ name, href }) => (
+        {SOCIAL_MEDIA.map(({ name, href }) => (
           <li
             key={name}
             className={clsxm(

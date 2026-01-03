@@ -8,3 +8,12 @@ export const navigationItems: LinkItem[] = [
 ];
 
 export const CONTACT_EMAIL = 'dennisadu@gmail.com';
+
+export const SOCIAL_MEDIA = [
+  {
+    name: 'instagram',
+    href: 'https://www.instagram.com/dennisadumusic',
+  },
+  { name: 'youtube', href: 'http://www.youtube.com/@adudennis' },
+  { name: 'facebook', href: 'https://www.facebook.com/adu.dennis' },
+];
