@@ -16,8 +16,14 @@ import { usePathname } from 'next/navigation';
 export const HamburgerMenu = ({ className }: { className?: string }) => {
   const pathname = usePathname();
   const close = useClose();
+  const currentPageTitle = navigationItems.find(
+    (item) => item.href === pathname,
+  )?.title;
   return (
-    <div className='flex items-center sm:hidden'>
+    <div className='w-full flex justify-between items-center sm:hidden'>
+      <h3 className='font-helvetica text-primary-100 ~text-[1.125rem]/[1.625rem] font-bold uppercase'>
+        {currentPageTitle}
+      </h3>
       <PopoverButton className='rounded-lg p-1 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-inset focus:ring-primary-100'>
         <span className='sr-only'>Open main menu</span>
         <Bars3Icon
