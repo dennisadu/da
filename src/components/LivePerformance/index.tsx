@@ -1,5 +1,7 @@
 import { CONTACT_EMAIL } from '@/constants';
 import { Button } from '../Button';
+import { WorkExamples } from '../WorkExamples/WorkExamples';
+import { LIVE_PERFORMANCE } from '@/constants/musicList';
 
 export const LivePerformance = () => {
   return (
@@ -26,6 +28,10 @@ export const LivePerformance = () => {
           unmatched energy that elevate every live show.
         </p>
       </div>
+      <h4 className='font-helvetica uppercase ~mt-6/8 ~text-lg/[1.75rem]'>
+        Work Examples
+      </h4>
+      <WorkExamples data={LIVE_PERFORMANCE} />
       <Button
         as='link'
         href={`mailto:${CONTACT_EMAIL}`}
