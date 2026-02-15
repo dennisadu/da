@@ -10,7 +10,7 @@ export interface LinkItem {
 }
 
 export interface Item {
-  id: number | string;
+  id: string;
   title: string;
 }
 

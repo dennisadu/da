@@ -76,7 +76,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className='mx-auto mt-auto text-gray-10 ~text-[1rem]/[1.625rem]'>
-          © 2025 Dennis Adu
+          © {new Date().getFullYear()} Dennis Adu
         </div>
       </div>
     </footer>

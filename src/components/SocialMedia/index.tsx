@@ -2,9 +2,9 @@ import { SOCIAL_MEDIA } from '@/constants';
 import { clsxm } from '@/utils/clsxm';
 import Link from 'next/link';
 
-export const SocialMedia = () => {
+export const SocialMedia = ({ className }: { className?: string }) => {
   return (
-    <div>
+    <div className={clsxm(className)}>
       <h1 className='~text-[2.5rem]/[4rem] uppercase'>Social Media</h1>
       <ul className='~mt-8/14 [&>*:not(:first-child)]:~mt-4/6'>
         {SOCIAL_MEDIA.map(({ name, href }) => (

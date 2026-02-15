@@ -10,12 +10,14 @@ import {
 } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
-const MusicItemCard = ({
+export const MusicItemCard = ({
   item: { title, img, href },
   orientation = 'vertical',
+  imageWrapperClassName,
 }: {
   item: MusicItem;
   orientation?: 'horizontal' | 'vertical';
+  imageWrapperClassName?: string;
 }) => {
   const isVertical = orientation === 'vertical';
   const isHorizontal = orientation === 'horizontal';
@@ -29,7 +31,12 @@ const MusicItemCard = ({
       target='_blank'
       rel='noopener noreferrer'
     >
-      <div className='rounded-2xl overflow-hidden ~w-[3.5rem]/[15.5rem] ~h-[3.5rem]/[15.5rem]'>
+      <div
+        className={clsxm(
+          'rounded-2xl overflow-hidden ~w-[3.5rem]/[15.5rem] ~h-[3.5rem]/[15.5rem]',
+          imageWrapperClassName,
+        )}
+      >
         <Image
           src={`/images/${img}.png`}
           alt={title}
