@@ -2,9 +2,9 @@ import { CONTACT_EMAIL } from '@/constants';
 import { clsxm } from '@/utils/clsxm';
 import Link from 'next/link';
 
-export const Contact = () => {
+export const Contact = ({ className }: { className?: string }) => {
   return (
-    <div>
+    <div className={clsxm(className)}>
       <h1 className='~text-[2.5rem]/[4rem] uppercase'>Contact</h1>
       <Link
         href={`mailto:${CONTACT_EMAIL}`}

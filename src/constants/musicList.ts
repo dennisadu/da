@@ -22,16 +22,28 @@ export const COLLABORATIONS = getTracksByIds([
 ]);
 
 export const LIVE_CONCERTS = getTracksByIds([
-  'amijazz-bb',
-  'san-jose-winter-fest',
-  'amijazz-quintet',
-  'ny-sessions-train76k',
+  'amijazzBb',
+  'sanJoseWinterFest',
+  'amijazzQuintet',
+  'nySessionsTrain76k',
 ]);
 
 export const LIVE_PERFORMANCE = getTracksByIds([
   'amijazzBb',
   'sanJoseWinterFest',
   'nySessionsTrain76k',
+]);
+
+export const RECORDING = getTracksByIds([
+  'kadnay',
+  'maneken-heavens',
+  'protea',
+]);
+
+export const ARRANGEMENTS = getTracksByIds([
+  'wayne-dennis-bb-stranded',
+  'impressions-cheremshyna',
+  'blakyt',
 ]);
 
 export const MUSIC_LIST: MusicList[] = [
