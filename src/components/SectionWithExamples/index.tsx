@@ -1,7 +1,7 @@
 import { CONTACT_EMAIL } from '@/constants';
 import { Button } from '../Button';
 import { MusicItem } from '@/types';
-import { MusicItemCard } from '../Music';
+import { MusicItemCard } from '../MusicSection';
 import { clsxm } from '@/utils/clsxm';
 
 interface SectionWithExamplesProps {

@@ -1,8 +1,9 @@
 import { SOCIAL_MEDIA } from '@/constants';
+import { PropsWithClassName } from '@/types';
 import { clsxm } from '@/utils/clsxm';
 import Link from 'next/link';
 
-export const SocialMedia = ({ className }: { className?: string }) => {
+export const SocialMedia = ({ className }: PropsWithClassName) => {
   return (
     <div className={clsxm(className)}>
       <h1 className='~text-[2.5rem]/[4rem] uppercase'>Social Media</h1>

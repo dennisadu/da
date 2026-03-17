@@ -11,13 +11,13 @@ export const ORIGINAL_MUSIC = getTracksByIds([
   'climb',
   'sunlight',
   'contemplate',
-  't.n.',
+  'tn',
 ]);
 
 export const COLLABORATIONS = getTracksByIds([
   'kadnay',
   'protea',
-  'budu-5hv',
+  'budu5hv',
   'blakyt',
 ]);
 
@@ -63,3 +63,17 @@ export const MUSIC_LIST: MusicList[] = [
     items: LIVE_CONCERTS,
   },
 ];
+
+export const INFLUENCES = getTracksByIds([
+  'climb',
+  'lebron',
+  'contemplate',
+  'angelica-eyes',
+]);
+
+export const SUNLIGHT_ABOVE_THE_SKY = getTracksByIds([
+  'sunlight',
+  'tn',
+  'one-of-those-nights',
+  'armageddon',
+]);

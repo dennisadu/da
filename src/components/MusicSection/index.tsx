@@ -60,7 +60,7 @@ export const MusicItemCard = ({
   );
 };
 
-export const Music = () => {
+export const MusicSection = () => {
   return (
     <div>
       <h1 className='~text-[2.5rem]/[4rem] uppercase'>Music</h1>

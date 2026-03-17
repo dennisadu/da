@@ -3,11 +3,13 @@
 import { Popover } from '@headlessui/react';
 import { HamburgerMenu } from '../HamburgerMenu';
 import { Nav } from '../Nav';
+import { clsxm } from '@/utils/clsxm';
+import { PropsWithClassName } from '@/types';
 
-const Header = () => {
+const Header = ({ className }: PropsWithClassName) => {
   return (
     <Popover>
-      <header className='w-full flex justify-end sm:block'>
+      <header className={clsxm('w-full flex justify-end sm:block', className)}>
         <Nav />
         <HamburgerMenu className='sm:hidden' />
       </header>

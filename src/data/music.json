@@ -88,5 +88,29 @@
     "title": "Wayne Escoffery & Dennis Adu Big Band - Stranded",
     "img": "wayne-dennis-bb-stranded",
     "href": "https://www.youtube.com/watch?v=yEzNSfauiqY&list=RDyEzNSfauiqY&start_radio=1"
+  },
+  {
+    "id": "lebron",
+    "title": "LeBron",
+    "href": "https://music.youtube.com/watch?v=DhDLO6BgJjg&si=pDhmMO5z1qYpoaAV",
+    "img": "influences"
+  },
+  {
+    "id": "angelica-eyes",
+    "title": "Angelica's Eyes",
+    "href": "https://music.youtube.com/watch?v=5mJd5v4C3jM&si=Ps5VirLLObHtEvv_",
+    "img": "influences"
+  },
+  {
+    "id": "one-of-those-nights",
+    "title": "One Of Those Sunday Nights At Barman Dictat",
+    "href": "https://music.youtube.com/watch?v=NDaiZ6oPQ8c&si=TZnUOvYUZsw6utVa",
+    "img": "sunlight"
+  },
+  {
+    "id": "armageddon",
+    "title": "Armageddon",
+    "href": "https://music.youtube.com/watch?v=NDaiZ6oPQ8c&si=TZnUOvYUZsw6utVa",
+    "img": "sunlight"
   }
 ]
