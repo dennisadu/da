@@ -33,6 +33,7 @@ export const Footer = () => {
             className={clsxm(
               'uppercase ~text-[4.06rem]/[12.5rem] text-primary-60 font-semibold',
               'flex flex-col ~tracking-[-0.125rem]/[0rem] leading-none ~gap-7/16',
+              'hidden sm:flex',
             )}
           >
             <span>Dennis</span>
@@ -40,11 +41,12 @@ export const Footer = () => {
           </h2>
           <div
             className={clsxm(
-              'text-gray-10 mt-1 md:mt-auto text-right md:text-left',
-              'flex flex-col md:flex-row md:gap-10',
+              'text-gray-10 mt-1 lg:mt-auto text-right lg:text-left',
+              'flex flex-col lg:flex-row md:gap-10',
+              'w-full',
             )}
           >
-            <div className='md:order-1'>
+            <div className='lg:order-1'>
               <p className='text-nowrap uppercase text-gray-40 ~text-[1.125rem]/[1.625rem] font-bold'>
                 Social Media
               </p>
