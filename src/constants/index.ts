@@ -7,7 +7,7 @@ export const navigationItems: LinkItem[] = [
   { title: 'projects', href: '/projects' },
 ];
 
-export const CONTACT_EMAIL = 'dennisadu@gmail.com';
+export const CONTACT_EMAIL = 'dennisadumusic@gmail.com';
 
 export const SOCIAL_MEDIA = [
   {
