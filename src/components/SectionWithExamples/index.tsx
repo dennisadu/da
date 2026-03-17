@@ -6,10 +6,11 @@ import { clsxm } from '@/utils/clsxm';
 
 interface SectionWithExamplesProps {
   title: string;
-  paragraphs: string[];
+  paragraphs: (string | string[])[];
   workExamples?: MusicItem[];
   showContactButton?: boolean;
   className?: string;
+  headerClassName?: string;
 }
 
 export const SectionWithExamples = ({
@@ -18,10 +19,16 @@ export const SectionWithExamples = ({
   workExamples,
   showContactButton = true,
   className,
+  headerClassName,
 }: SectionWithExamplesProps) => {
   return (
     <div className={clsxm('max-w-[1107px]', className)}>
-      <div className='flex flex-col sm:flex-row sm:items-center sm:gap-6'>
+      <div
+        className={clsxm(
+          'flex flex-col sm:flex-row sm:items-center sm:gap-6',
+          headerClassName,
+        )}
+      >
         <h3 className='~text-[2.5rem]/[4rem] uppercase'>{title}</h3>
         {showContactButton && (
           <Button
@@ -34,11 +41,22 @@ export const SectionWithExamples = ({
         )}
       </div>
       <div className='~mt-[1rem]/[1.5rem] ~text-[1rem]/[1.625rem] text-gray-100 flex flex-col gap-4'>
-        {paragraphs.map((paragraph, index) => (
-          <p key={index} className={index > 0 ? 'mt-4' : ''}>
-            {paragraph}
-          </p>
-        ))}
+        {paragraphs.map((paragraph, index) => {
+          if (Array.isArray(paragraph)) {
+            return (
+              <ul key={index} className={index > 0 ? 'mt-4' : ''}>
+                {paragraph.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            );
+          }
+          return (
+            <p key={index} className={index > 0 ? 'mt-4' : ''}>
+              {paragraph}
+            </p>
+          );
+        })}
       </div>
       {workExamples && (
         <>

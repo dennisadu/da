@@ -12,6 +12,12 @@
     "href": "https://music.youtube.com/watch?v=j9lcIumCpAc&si=_H3CqP28ZKxzzzlx"
   },
   {
+    "id": "sunlight-live",
+    "title": "Dennis Adu Quintet - Sunlight Above The Sky",
+    "img": "sunlight-live",
+    "href": "https://www.youtube.com/watch?v=srpha_ANRRU&list=RDsrpha_ANRRU&start_radio=1"
+  },
+  {
     "id": "contemplate",
     "title": "Just Stay and Contemplate",
     "img": "influences",
@@ -112,5 +118,35 @@
     "title": "Armageddon",
     "href": "https://music.youtube.com/watch?v=NDaiZ6oPQ8c&si=TZnUOvYUZsw6utVa",
     "img": "sunlight"
+  },
+  {
+    "id": "shoes",
+    "title": "Dennis Adu Quintet - If I Was In His Shoes",
+    "href": "https://www.youtube.com/watch?v=I2lV7doPWKw&list=RDI2lV7doPWKw&start_radio=1",
+    "img": "shoes"
+  },
+  {
+    "id": "forget-regret",
+    "title": "Dennis Adu Quartet feat Yana Vialova - Forget Regret",
+    "href": "https://www.youtube.com/watch?v=uQrpAt-Y-FQ&list=RDuQrpAt-Y-FQ&start_radio=1",
+    "img": "yana32"
+  },
+  {
+    "id": "yana-drug",
+    "title": "Dennis Adu Quartet feat. Yana Vialova - Друг",
+    "href": "https://www.instagram.com/reel/CzURO8ZNB1l/?igsh=ZmRsYXAyZXpoMnNs",
+    "img": "yana-drug"
+  },
+  {
+    "id": "yana-love4sale",
+    "title": "Dennis Adu Quartet feat. Yana Vialova - Love 4 Sale",
+    "href": "https://www.youtube.com/watch?v=cDMnTLsq_cY&list=RDcDMnTLsq_cY&start_radio=1",
+    "img": "love4sale"
+  },
+  {
+    "id": "dennis-bb-kyiv",
+    "title": "Dennis Adu Big Band - Stranded",
+    "img": "dennis-bb-kyiv",
+    "href": "https://www.youtube.com/watch?v=yEzNSfauiqY&list=RDyEzNSfauiqY&start_radio=1"
   }
 ]

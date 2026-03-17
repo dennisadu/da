@@ -77,3 +77,21 @@ export const SUNLIGHT_ABOVE_THE_SKY = getTracksByIds([
   'one-of-those-nights',
   'armageddon',
 ]);
+
+export const DENNIS_ADU_QUINTET_KYIV = getTracksByIds([
+  'amijazzQuintet',
+  'sunlight-live',
+  'shoes',
+]);
+
+export const DENNIS_ADU_AND_YANA = getTracksByIds([
+  'forget-regret',
+  'yana-drug',
+  'yana-love4sale',
+]);
+
+export const DENNIS_ADU_BB = getTracksByIds([
+  'amijazzBb',
+  'wayne-dennis-bb-stranded',
+  'dennis-bb-kyiv',
+]);

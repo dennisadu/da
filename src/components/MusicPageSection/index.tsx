@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { MusicItem, PropsWithClassName } from '@/types';
 import { clsxm } from '@/utils/clsxm';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import influences from '@/../public/images/influences-374x374.png';
 
 interface MusicPageSectionProps extends PropsWithClassName {
   title?: string;
@@ -15,7 +16,7 @@ interface MusicPageSectionProps extends PropsWithClassName {
 
 export const MusicPageSection = ({
   title,
-  img = '/images/Influences-374x374.png',
+  img = influences,
   alt = 'Influences album cover',
   musicItems,
   paragraphs,
@@ -38,6 +39,7 @@ export const MusicPageSection = ({
               width={374}
               height={374}
               priority
+              placeholder='blur'
               className='w-full h-full object-cover'
             />
           </div>

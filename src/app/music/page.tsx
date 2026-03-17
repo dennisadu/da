@@ -2,6 +2,8 @@ import { MusicPageSection } from '@/components/MusicPageSection';
 import Image from 'next/image';
 import quintetNYC from '@/../public/images/dennis_quintet_ny.png';
 import septetNaHAti from '@/../public/images/dennis-septet-na-hati.png';
+import influences from '@/../public/images/influences-374x374.png';
+import sunlight from '@/../public/images/sunlight-374x374.png';
 import { INFLUENCES, SUNLIGHT_ABOVE_THE_SKY } from '@/constants/musicList';
 import { Contact } from '@/components/Contact';
 import { SocialMedia } from '@/components/SocialMedia';
@@ -12,7 +14,7 @@ export default function Music() {
       <MusicPageSection
         className='~px-[1rem]/[4.5rem]'
         title='Influences'
-        img='/images/Influences-374x374.png'
+        img={influences}
         alt='Influences album cover'
         musicItems={INFLUENCES}
         paragraphs={[
@@ -34,7 +36,7 @@ export default function Music() {
       <MusicPageSection
         className='~px-[1rem]/[4.5rem]'
         title='Sunlight Above The Sky'
-        img='/images/sunlight-374x374.png'
+        img={sunlight}
         alt='Sunlight Above The Sky album cover'
         musicItems={SUNLIGHT_ABOVE_THE_SKY}
         paragraphs={[
@@ -52,7 +54,6 @@ export default function Music() {
         placeholder='blur'
         className='object-cover ~w-[23.438rem]/[90rem] ~h-[13.063rem]/[50.063rem]'
       />
-
       <Contact className='~px-[1rem]/[4.5rem] ~mt-[3.5rem]/[8rem]' />
       <SocialMedia className='~px-[1rem]/[4.5rem] ~my-[3.5rem]/[8rem]' />
     </div>
