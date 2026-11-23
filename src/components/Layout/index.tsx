@@ -14,8 +14,13 @@ export const Layout = ({
   headerClassName,
 }: LayoutProps) => {
   return (
-    <div className='app-container min-h-screen flex flex-col'>
-      <div className={clsxm('~px-[1rem]/[4.5rem] ~pt-4/10', className)}>
+    <div className='min-h-screen flex flex-col'>
+      <div
+        className={clsxm(
+          'app-container ~px-[1rem]/[4.5rem] ~pt-4/10',
+          className,
+        )}
+      >
         <Header className={headerClassName} />
         {children}
       </div>

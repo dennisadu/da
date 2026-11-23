@@ -22,18 +22,22 @@ export const Footer = () => {
         alt='Dennis Adu'
         priority
         placeholder='blur'
-        className='absolute object-cover ~w-[23.438rem]/[90rem] ~h-[20.125rem]/[48.313rem] sm:hidden'
+        fill
+        sizes='100vw'
+        className='object-cover sm:hidden'
       />
       <Image
         src={footerBg}
         alt='Dennis Adu'
         priority
         placeholder='blur'
-        className='absolute object-cover ~w-[23.438rem]/[90rem] ~h-[20.125rem]/[48.313rem] hidden sm:block'
+        fill
+        sizes='100vw'
+        className='object-cover hidden sm:block'
       />
       <div
         className={clsxm(
-          'flex flex-col h-full',
+          'app-container flex flex-col h-full',
           'relative z-10 ~px-[1rem]/[4.5rem] ~py-6/14',
         )}
       >
