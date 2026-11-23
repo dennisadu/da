@@ -44,3 +44,24 @@
     @apply lg:max-w-[1440px] mx-auto w-full;
   }
 }
+
+@layer components {
+  .paint-text {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-100) 50%,
+      var(--color-gray-100) 50%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: background-position 300ms ease-in-out;
+  }
+
+  a:hover > .paint-text,
+  a:focus-visible > .paint-text {
+    background-position: left;
+  }
+}

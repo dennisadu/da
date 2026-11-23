@@ -5,6 +5,15 @@ import { clsxm } from '@/utils/clsxm';
 import { CONTACT_EMAIL, CONTACT_SECTION_ID, SOCIAL_MEDIA } from '@/constants';
 import Link from 'next/link';
 
+const footerLink = clsxm(
+  'relative isolate inline-block transition-colors duration-300 ease-in-out',
+  'hover:text-gray-100 focus-visible:text-gray-100',
+  'after:absolute after:-inset-x-2 after:-inset-y-0.5 after:-z-10',
+  'after:origin-left after:scale-x-0 after:bg-gray-10',
+  'after:transition-transform after:duration-300 after:ease-in-out',
+  'hover:after:scale-x-100 focus-visible:after:scale-x-100',
+);
+
 export const Footer = () => {
   return (
     <footer className='relative w-full ~h-[20.125rem]/[48.313rem] mt-auto'>
@@ -53,7 +62,12 @@ export const Footer = () => {
               <ul className='flex flex-col ~gap-[0.5rem]/[1rem] ~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold'>
                 {SOCIAL_MEDIA.map(({ name, href }) => (
                   <li key={name}>
-                    <Link href={href} target='_blank' rel='noopener noreferrer'>
+                    <Link
+                      href={href}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className={footerLink}
+                    >
                       {name}
                     </Link>
                   </li>
@@ -69,7 +83,10 @@ export const Footer = () => {
                   href={`mailto:${CONTACT_EMAIL}`}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold'
+                  className={clsxm(
+                    '~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold',
+                    footerLink,
+                  )}
                 >
                   {CONTACT_EMAIL}
                 </Link>

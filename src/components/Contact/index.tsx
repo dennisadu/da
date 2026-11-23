@@ -15,11 +15,11 @@ export const Contact = ({ className }: PropsWithClassName) => {
           '~mt-8/14',
           '~text-[1.125rem]/[1.625rem] font-bold uppercase',
           'transition-colors duration-300 ease-in-out',
-          'hover:text-primary-100',
+          'hover:text-primary-100 focus-visible:text-primary-100',
           'flex items-center before:hidden xs:before:flex before:content-[""] before:w-4 before:h-4 before:bg-current before:rounded-full before:mr-3',
         )}
       >
-        {CONTACT_EMAIL}
+        <span className='paint-text'>{CONTACT_EMAIL}</span>
       </Link>
       <div className='~mt-4/6 h-px bg-gray-60 w-full' />
     </div>
