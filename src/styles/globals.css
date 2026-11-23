@@ -13,6 +13,12 @@
     --color-primary-100: #c92a2a;
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
   body {
     background: var(--color-gray-10);
     color: var(--color-gray-100);

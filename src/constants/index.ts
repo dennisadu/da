@@ -8,6 +8,7 @@ export const navigationItems: LinkItem[] = [
 ];
 
 export const CONTACT_EMAIL = 'dennisadumusic@gmail.com';
+export const CONTACT_SECTION_ID = 'contact';
 
 export const SOCIAL_MEDIA = [
   {

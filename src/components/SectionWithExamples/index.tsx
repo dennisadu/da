@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from '@/constants';
+import { CONTACT_SECTION_ID } from '@/constants';
 import { Button } from '../Button';
 import { MusicItem } from '@/types';
 import { MusicItemCard } from '../MusicSection';
@@ -33,7 +33,7 @@ export const SectionWithExamples = ({
         {showContactButton && (
           <Button
             as='link'
-            href={`mailto:${CONTACT_EMAIL}`}
+            href={`#${CONTACT_SECTION_ID}`}
             className='hidden sm:flex sm:mt-2 w-full sm:~w-[8rem]/[15rem] bg-transparent border-2 border-primary-60 text-primary-60'
           >
             Contact
@@ -78,7 +78,7 @@ export const SectionWithExamples = ({
       {showContactButton && (
         <Button
           as='link'
-          href={`mailto:${CONTACT_EMAIL}`}
+          href={`#${CONTACT_SECTION_ID}`}
           className='sm:hidden flex mt-6 w-full sm:~w-[8rem]/[15rem] bg-transparent border-2 border-primary-60 text-primary-60'
         >
           Contact

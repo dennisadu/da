@@ -12,7 +12,7 @@ export const Contact = ({ className }: PropsWithClassName) => {
         target='_blank'
         rel='noopener noreferrer'
         className={clsxm(
-          '~gap-4/6 ~mt-8/14',
+          '~mt-8/14',
           '~text-[1.125rem]/[1.625rem] font-bold uppercase',
           'transition-colors duration-300 ease-in-out',
           'hover:text-primary-100',

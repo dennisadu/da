@@ -2,7 +2,7 @@ import Image from 'next/image';
 import footerBg from '@/../public/images/footer_bg.png';
 import footerBgMobile from '@/../public/images/footer_bg_mobile.png';
 import { clsxm } from '@/utils/clsxm';
-import { CONTACT_EMAIL, SOCIAL_MEDIA } from '@/constants';
+import { CONTACT_EMAIL, CONTACT_SECTION_ID, SOCIAL_MEDIA } from '@/constants';
 import Link from 'next/link';
 
 export const Footer = () => {
@@ -60,7 +60,7 @@ export const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className='mt-8 md:mt-auto'>
+            <div id={CONTACT_SECTION_ID} className='mt-8 md:mt-auto'>
               <p className='uppercase text-gray-40 ~text-[1.125rem]/[1.625rem] font-bold'>
                 Contact
               </p>
