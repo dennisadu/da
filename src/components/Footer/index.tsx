@@ -2,8 +2,17 @@ import Image from 'next/image';
 import footerBg from '@/../public/images/footer_bg.png';
 import footerBgMobile from '@/../public/images/footer_bg_mobile.png';
 import { clsxm } from '@/utils/clsxm';
-import { CONTACT_EMAIL, SOCIAL_MEDIA } from '@/constants';
+import { CONTACT_EMAIL, CONTACT_SECTION_ID, SOCIAL_MEDIA } from '@/constants';
 import Link from 'next/link';
+
+const footerLink = clsxm(
+  'relative isolate inline-block transition-colors duration-300 ease-in-out',
+  'hover:text-gray-100 focus-visible:text-gray-100',
+  'after:absolute after:-inset-x-2 after:-inset-y-0.5 after:-z-10',
+  'after:origin-left after:scale-x-0 after:bg-gray-10',
+  'after:transition-transform after:duration-300 after:ease-in-out',
+  'hover:after:scale-x-100 focus-visible:after:scale-x-100',
+);
 
 export const Footer = () => {
   return (
@@ -13,18 +22,22 @@ export const Footer = () => {
         alt='Dennis Adu'
         priority
         placeholder='blur'
-        className='absolute object-cover ~w-[23.438rem]/[90rem] ~h-[20.125rem]/[48.313rem] sm:hidden'
+        fill
+        sizes='100vw'
+        className='object-cover sm:hidden'
       />
       <Image
         src={footerBg}
         alt='Dennis Adu'
         priority
         placeholder='blur'
-        className='absolute object-cover ~w-[23.438rem]/[90rem] ~h-[20.125rem]/[48.313rem] hidden sm:block'
+        fill
+        sizes='100vw'
+        className='object-cover hidden sm:block'
       />
       <div
         className={clsxm(
-          'flex flex-col h-full',
+          'app-container flex flex-col h-full',
           'relative z-10 ~px-[1rem]/[4.5rem] ~py-6/14',
         )}
       >
@@ -53,14 +66,19 @@ export const Footer = () => {
               <ul className='flex flex-col ~gap-[0.5rem]/[1rem] ~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold'>
                 {SOCIAL_MEDIA.map(({ name, href }) => (
                   <li key={name}>
-                    <Link href={href} target='_blank' rel='noopener noreferrer'>
+                    <Link
+                      href={href}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className={footerLink}
+                    >
                       {name}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className='mt-8 md:mt-auto'>
+            <div id={CONTACT_SECTION_ID} className='mt-8 md:mt-auto'>
               <p className='uppercase text-gray-40 ~text-[1.125rem]/[1.625rem] font-bold'>
                 Contact
               </p>
@@ -69,7 +87,10 @@ export const Footer = () => {
                   href={`mailto:${CONTACT_EMAIL}`}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold'
+                  className={clsxm(
+                    '~mt-2/6 ~text-[1rem]/[1.625rem] text-gray-10 uppercase font-normal md:font-bold',
+                    footerLink,
+                  )}
                 >
                   {CONTACT_EMAIL}
                 </Link>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import heroImg from '@/../public/images/hero_img.jpg';
 import { Button } from '../Button';
-import { CONTACT_EMAIL } from '@/constants';
+import { CONTACT_SECTION_ID } from '@/constants';
 
 export const Hero = () => {
   return (
@@ -12,7 +12,7 @@ export const Hero = () => {
         </h1>
         <Button
           as='link'
-          href={`mailto:${CONTACT_EMAIL}`}
+          href={`#${CONTACT_SECTION_ID}`}
           className='~mt-6/20 hidden sm:flex'
         >
           Contact
@@ -31,7 +31,7 @@ export const Hero = () => {
         />
         <Button
           as='link'
-          href={`mailto:${CONTACT_EMAIL}`}
+          href={`#${CONTACT_SECTION_ID}`}
           className='~mt-6/20 absolute ~/sm:~right-1/12 -bottom-3 sm:hidden'
         >
           Contact

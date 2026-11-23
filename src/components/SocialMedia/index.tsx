@@ -14,17 +14,19 @@ export const SocialMedia = ({ className }: PropsWithClassName) => {
             className={clsxm(
               'flex flex-col ~gap-4/6',
               '~text-[1.125rem]/[1.625rem] font-bold uppercase',
-              'transition-colors duration-300 ease-in-out',
-              'hover:text-primary-100',
             )}
           >
             <Link
-              className='flex items-center before:content-[""] before:w-4 before:h-4 before:bg-current before:rounded-full before:mr-3'
+              className={clsxm(
+                'flex items-center before:content-[""] before:w-4 before:h-4 before:bg-current before:rounded-full before:mr-3',
+                'transition-colors duration-300 ease-in-out',
+                'hover:text-primary-100 focus-visible:text-primary-100',
+              )}
               href={href}
               target='_blank'
               rel='noopener noreferrer'
             >
-              {name}
+              <span className='paint-text'>{name}</span>
             </Link>
             <div className='h-px bg-gray-60 w-full' />
           </li>
